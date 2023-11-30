@@ -3,10 +3,10 @@
 Node + Typescript
 
 ### Pré-requisitos globais:
-npm i -g nodemon typescript ts-node
+`npm i -g nodemon typescript ts-node`
 
 ### INSTALAÇÃO
-npm install
+`npm install`
 
 ## PARA RODAR O PROJETO:
-npm run start-dev
+`npm run start-dev`
