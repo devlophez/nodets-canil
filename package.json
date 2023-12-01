@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Projeto desenvolvido em Node e Typescript",
   "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
+    "start": "node dist/server.js",
+    "postinstall": "tsc && copyfiles -u 1 src/**/**.mustache dist/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   },
@@ -17,6 +22,7 @@
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/mustache-express": "^1.2.5",
-    "@types/node": "^20.10.1"
+    "@types/node": "^20.10.1",
+    "copyfiles": "^2.4.1"
   }
 }
