@@ -35,7 +35,8 @@ server.use(mainRoutes)
 
 
 server.use((req, res) =>{
-    res.send('Página não encontrada!')
+
+    res.render('pages/404')
 })
 
 /**     Configuração de porta do servidor */
